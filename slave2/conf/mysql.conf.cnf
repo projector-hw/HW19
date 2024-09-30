@@ -1,0 +1,9 @@
+[mysqld]
+
+skip-name-resolve
+default_authentication_plugin = mysql_native_password
+
+server-id = 3
+log_bin = /var/log/mysql/mysql-bin.log
+relay-log = /var/log/mysql/mysql-relay-bin.log
+binlog_do_db = mydb
